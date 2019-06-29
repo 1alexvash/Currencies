@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 const Preloader = () => {
   const [preloaderContent, setPreloaderContent] = useState(

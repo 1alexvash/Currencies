@@ -45,17 +45,21 @@ const App = () => {
   }, [state.rates, state.from, state.to]);
 
   const fetchInitialData = async () => {
-    const data = await axios.get(
-      "http://data.fixer.io/api/latest?access_key=a05d207ddb46b3f2afa728b84709f1ad"
-    );
+    try {
+      const data = await axios.get(
+        "https://data.fixer.io/api/latest?access_key=a05d207ddb46b3f2afa728b84709f1ad"
+      );
 
-    const { rates } = data.data;
+      const { rates } = data.data;
 
-    setState({
-      ...state,
-      date: data.data.date,
-      rates
-    });
+      setState({
+        ...state,
+        date: data.data.date,
+        rates
+      });
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   useEffect(() => {

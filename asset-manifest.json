@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Currencies/static/css/main.a60d1e8e.chunk.css",
-    "main.js": "/Currencies/static/js/main.da1280ef.chunk.js",
-    "main.js.map": "/Currencies/static/js/main.da1280ef.chunk.js.map",
+    "main.js": "/Currencies/static/js/main.186b1ad6.chunk.js",
+    "main.js.map": "/Currencies/static/js/main.186b1ad6.chunk.js.map",
     "runtime~main.js": "/Currencies/static/js/runtime~main.8cccf251.js",
     "runtime~main.js.map": "/Currencies/static/js/runtime~main.8cccf251.js.map",
     "static/js/2.9bd2e2ca.chunk.js": "/Currencies/static/js/2.9bd2e2ca.chunk.js",
     "static/js/2.9bd2e2ca.chunk.js.map": "/Currencies/static/js/2.9bd2e2ca.chunk.js.map",
     "index.html": "/Currencies/index.html",
-    "precache-manifest.bc52f25e6d6098ac9ca5a7175b5af440.js": "/Currencies/precache-manifest.bc52f25e6d6098ac9ca5a7175b5af440.js",
+    "precache-manifest.fdb0bcf466836fbf846861cfe16bebe9.js": "/Currencies/precache-manifest.fdb0bcf466836fbf846861cfe16bebe9.js",
     "service-worker.js": "/Currencies/service-worker.js",
     "static/css/main.a60d1e8e.chunk.css.map": "/Currencies/static/css/main.a60d1e8e.chunk.css.map"
   }

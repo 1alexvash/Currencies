@@ -38,6 +38,7 @@ body:before {
 
 .App {
   width: 320px;
+  padding: 20px;
   color: white;
   margin: 0 auto;
 }
@@ -117,7 +118,7 @@ body:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px;
+  padding: 10px;
   -webkit-box-shadow: 0 2px 6px black;
           box-shadow: 0 2px 6px black;
 }
@@ -150,7 +151,7 @@ body:before {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 20px 0;
-  padding: 20px;
+  padding: 10px;
   -webkit-box-shadow: 0 2px 6px black;
           box-shadow: 0 2px 6px black;
 }
@@ -191,7 +192,7 @@ body:before {
 .Footer {
   -webkit-box-shadow: 0 2px 6px black;
           box-shadow: 0 2px 6px black;
-  padding: 20px;
+  padding: 10px;
 }
 
 .Footer input {

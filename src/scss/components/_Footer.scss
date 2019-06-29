@@ -1,0 +1,19 @@
+.Footer {
+  box-shadow: 0 2px 6px black;
+  padding: 20px;
+  input {
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(deepskyblue, 0.5);
+    transition: 0.3s;
+    &:hover {
+      box-shadow: 0 2px 8px deepskyblue;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.output {
+  font-size: 24px;
+}

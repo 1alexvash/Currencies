@@ -47,7 +47,7 @@ const App = () => {
   const fetchInitialData = async () => {
     try {
       const data = await axios.get(
-        "https://data.fixer.io/api/latest?access_key=a05d207ddb46b3f2afa728b84709f1ad"
+        "http://data.fixer.io/api/latest?access_key=a05d207ddb46b3f2afa728b84709f1ad"
       );
 
       const { rates } = data.data;

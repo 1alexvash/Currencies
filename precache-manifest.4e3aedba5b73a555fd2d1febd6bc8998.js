@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2e0353465577cd5e70965b95c6f2dbce",
+    "revision": "5ef088e0d4d9d294be81e3b7bf56b25a",
     "url": "/Currencies/index.html"
   },
   {

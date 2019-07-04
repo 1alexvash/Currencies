@@ -38,7 +38,6 @@ const App = () => {
   useEffect(() => {
     if (state.rates !== undefined) {
       const rate = state.rates[state.to] / state.rates[state.from];
-      console.log(state.rates[state.to], state.rates[state.from]);
       setState({ ...state, rate });
     }
     //eslint-disable-next-line
@@ -68,7 +67,7 @@ const App = () => {
 
   return (
     <div className="App">
-      {/* <Preloader /> */}
+      <Preloader />
       <header className="Header">
         <div className="logo">
           <img src="favicon.ico" alt="logo" /> CURRENCIES

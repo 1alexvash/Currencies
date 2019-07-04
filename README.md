@@ -1,6 +1,6 @@
 # Currencies
 
-Get the exchange data
+Get the latest exchange data
 
 ## Installing the project && running on the local machine
 

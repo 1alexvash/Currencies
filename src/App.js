@@ -7,7 +7,7 @@ import axios from "axios";
 import "./scss/main.css";
 
 const App = () => {
-  const currencies = ["UAH", "USD", "EUR"];
+  const currencies = ["USD", "EUR", "GBP", "CAD"];
 
   const [state, setState] = useState({
     from: currencies[0],
@@ -15,8 +15,7 @@ const App = () => {
     amount: 0,
     result: "",
     date: "",
-    rates: undefined,
-    rate: undefined
+    rates: undefined
   });
 
   function onChange(e) {
@@ -34,11 +33,12 @@ const App = () => {
     const result = (state.amount * state.rate).toFixed(3);
     setState({ ...state, result });
     // eslint-disable-next-line
-  }, [state.rate, state.amount]);
+  }, [state.amount, state.rate]);
 
   useEffect(() => {
     if (state.rates !== undefined) {
       const rate = state.rates[state.to] / state.rates[state.from];
+      console.log(state.rates[state.to], state.rates[state.from]);
       setState({ ...state, rate });
     }
     //eslint-disable-next-line
@@ -46,11 +46,10 @@ const App = () => {
 
   const fetchInitialData = async () => {
     try {
-      const data = await axios.get(
-        "https://data.fixer.io/api/latest?access_key=a05d207ddb46b3f2afa728b84709f1ad"
-      );
+      const data = await axios.get("https://api.ratesapi.io/api/latest");
 
-      const { rates } = data.data;
+      let { rates } = data.data;
+      rates = { ...rates, EUR: 1 };
 
       setState({
         ...state,
@@ -69,7 +68,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Preloader />
+      {/* <Preloader /> */}
       <header className="Header">
         <div className="logo">
           <img src="favicon.ico" alt="logo" /> CURRENCIES
